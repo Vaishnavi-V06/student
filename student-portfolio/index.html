@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Portfolio Website">
+    <title>Vaishnavi V - Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Vaishnavi V</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="home-title">Hi, I'm <span class="highlight">Vaishnavi V</span></h1>
+                    <p class="home-tagline">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <p class="home-description">
+                        Motivated Electrical and Electronics Engineering student to obtain a responsible position in a
+                        reputable organization where I can
+                        effectively apply my skills and knowledge. To continuously enhance my professional competencies
+                        through learning and handson experience.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/VAISHNAVI-V610" class="social-link" aria-label="GitHub"
+                            target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vaishnavi-v-6090442a6" class="social-link"
+                            aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <div class="image-wrapper">
+                        <img src="image/WhatsApp Image 2026-05-01 at 8.45.28 PM.jpeg" alt="Profile Photo"
+                            class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>
+                        Hello! I'm an Electrical and Electronics Engineering student at Sri SaiRam Engineering College
+                        with a CGPA of 8.85.
+                        I'm passionate about embedded systems, IoT, and creating innovative solutions for real-world
+                        problems.
+                    </p>
+                    <p>
+                        I have experience simulating electrical circuits using Matlab and Tinkercad, building SQL-based
+                        database management systems,
+                        and automating workflows with Excel Macros. I've completed internships at leading companies
+                        including Ashok Leyland,
+                        where I worked on digitalization projects and received a potential Pre-Placement Offer.
+                    </p>
+                    <p>
+                        My goal is to apply my skills in electrical engineering, embedded systems, and software
+                        development to contribute
+                        to meaningful projects that make a difference in the industry.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3 class="stat-number">8.85</h3>
+                            <p class="stat-label">CGPA</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">3+</h3>
+                            <p class="stat-label">Internships</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-label">Certifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container fade-in">
+                    <h3>My Skills</h3>
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C Programming</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Matlab</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Embedded Systems</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Internship Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Education & Experience</h2>
+            <p class="section-subtitle fade-in">My academic journey and professional experience</p>
+
+            <!-- Education -->
+            <div class="experience-section fade-in">
+                <h3 class="experience-subtitle"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023- 2027 - Present</div>
+                            <h4 class="timeline-title">BE - Electrical and Electronics Engineering</h4>
+                            <p class="timeline-institution">Sri SaiRam Engineering College</p>
+                            <p class="timeline-description">CGPA: 8.85</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022 - 2023</div>
+                            <h4 class="timeline-title">HSC (12th Grade)</h4>
+                            <p class="timeline-institution">SPK Matric Hr. Sec School</p>
+                            <p class="timeline-description">Percentage: 87.8%</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2020 - 2021</div>
+                            <h4 class="timeline-title">SSLC (10th Grade)</h4>
+                            <p class="timeline-institution">SPK Matric Hr. Sec School</p>
+                            <p class="timeline-description">First Class</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Internship Experience -->
+            <div class="experience-section fade-in">
+                <h3 class="experience-subtitle"><i class="fas fa-briefcase"></i> Internship Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h4 class="timeline-title">Student Intern</h4>
+                            <p class="timeline-institution">Ashok Leyland Pvt. Ltd - Chennai</p>
+                            <p class="timeline-description">
+                                <strong>Project:</strong> Digitalization of Defence Aftermarket Including Dealer Network
+                                using Excel Macros and Oracle Database<br>
+                                <strong>Stipend:</strong> ₹30,000 per month<br>
+                                <strong>Outcome:</strong> Potential Pre-Placement Offer (PPO)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h4 class="timeline-title">Student Intern</h4>
+                            <p class="timeline-institution">Kasa Anlagen Pvt. Ltd - Chennai</p>
+                            <p class="timeline-description">
+                                Acquired knowledge of circuit breakers, switches, and transformers, along with
+                                understanding single line diagrams.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024</div>
+                            <h4 class="timeline-title">Student Intern</h4>
+                            <p class="timeline-institution">Seshasayee Paper and Boards Pvt. Ltd - Erode</p>
+                            <p class="timeline-description">
+                                Gained knowledge of 110 kV yard operations, boiler systems, and the working principles
+                                of electrical equipment in a paper industry.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">My Projects</h2>
+            <p class="section-subtitle fade-in">Here are some of my recent works</p>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="https://placehold.co/400x250/6c63ff/ffffff?text=Road+Nova"
+                            alt="Road Nova - GPS and Mapping System">
+                        <div class="project-overlay">
+                            <a href="javascript:void(0);" class="project-link" aria-label="View Project"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/VAISHNAVI-V610" class="project-link" aria-label="View Code"
+                                target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Road Nova</h3>
+                        <p class="project-description">
+                            GPS and Mapping System developed for SIH hackathon. Provides real-time navigation and
+                            mapping solutions for efficient route planning.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">GPS</span>
+                            <span class="tag">Mapping</span>
+                            <span class="tag">SIH Hackathon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="https://placehold.co/400x250/6c63ff/ffffff?text=Tampering+Detection"
+                            alt="Detection and Prevention of Tampering">
+                        <div class="project-overlay">
+                            <a href="javascript:void(0);" class="project-link" aria-label="View Project"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/VAISHNAVI-V610" class="project-link" aria-label="View Code"
+                                target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tampering Detection System</h3>
+                        <p class="project-description">
+                            Detection and Prevention of tampering in weighing and measuring instruments. Developed for
+                            SIH hackathon to ensure accuracy and fairness.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Sensors</span>
+                            <span class="tag">SIH Hackathon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="https://placehold.co/400x250/6c63ff/ffffff?text=Zoonotic+Detection"
+                            alt="Early Detection of Zoonotic Disease">
+                        <div class="project-overlay">
+                            <a href="javascript:void(0);" class="project-link" aria-label="View Project"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/VAISHNAVI-V610" class="project-link" aria-label="View Code"
+                                target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Zoonotic Disease Detection</h3>
+                        <p class="project-description">
+                            Early detection of zoonotic disease using IoT enabled sensors. Currently undergoing project
+                            focused on healthcare and disease prevention.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Sensors</span>
+                            <span class="tag">Healthcare</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="https://placehold.co/400x250/6c63ff/ffffff?text=Digitalization+Project"
+                            alt="Digitalization Project">
+                        <div class="project-overlay">
+                            <a href="javascript:void(0);" class="project-link" aria-label="View Project"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/VAISHNAVI-V610" class="project-link" aria-label="View Code"
+                                target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digitalization System</h3>
+                        <p class="project-description">
+                            Digitalization of Defence Aftermarket Including Dealer Network using Excel Macros and Oracle
+                            Database. Completed during internship at Ashok Leyland.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Excel Macros</span>
+                            <span class="tag">Oracle DB</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title fade-in">Resume</h2>
+            <p class="section-subtitle fade-in">Download my resume to learn more about my experience</p>
+            <div class="resume-content fade-in">
+                <div class="resume-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <h3>My Resume</h3>
+                <p>Click the button below to download my resume.</p>
+                <a href="resume/VAISHNAVI  V RESUME_page-0001.jpg" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Contact Me</h2>
+            <p class="section-subtitle fade-in">Get in touch with me</p>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <div class="contact-items-row">
+                        <div class="contact-item-inline">
+                            <i class="fas fa-envelope"></i>
+                            <span>vaishnaviv610@gmail.com</span>
+                        </div>
+                        <div class="contact-item-inline">
+                            <i class="fas fa-envelope"></i>
+                            <span>sec23ee005@sairamtap.edu.in</span>
+                        </div>
+                        <div class="contact-item-inline">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 6379420046</span>
+                        </div>
+                        <div class="contact-item-inline">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Chennai, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links-contact">
+                        <a href="https://github.com/VAISHNAVI-V610" class="social-link" aria-label="GitHub"
+                            target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vaishnavi-v-6090442a6" class="social-link"
+                            aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
